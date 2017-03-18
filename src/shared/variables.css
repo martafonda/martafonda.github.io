@@ -1,0 +1,4 @@
+:root {
+  --unit: 1rem;
+  --offset: calc(var(--unit) * 1.6);
+}
