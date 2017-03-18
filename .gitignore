@@ -17,8 +17,5 @@ node_modules/
 # Yarn Integrity file
 .yarn-integrity
 
-# Public
-public/
-
 # Others
 .DS_Store

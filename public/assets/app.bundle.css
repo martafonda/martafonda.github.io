@@ -1,13 +1,19 @@
-@import "./fonts.css";
-@import "./colors.css";
+/* Shared */
+:root {
+  /* - Font Family - */
 
+  /* - Font Size - */
+
+  /* - Font Height - */
+
+  /* - Font Weight - */
+}
 html {
   font-size: 62.5%;
 }
-
 body {
   font-size: 1.6rem;
-  font-family: var(--preferred-font);
+  font-family: Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: 0.02em;
@@ -17,13 +23,11 @@ body {
   position: absolute;
   -webkit-touch-callout: none;
   width: 100%;
-  background-color: var(--color-background);
-
-  & * {
-    -webkit-tap-highlight-color: rgba(255, 255, 255, 1);
-  }
+  background-color: white
 }
-
+body * {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 1);
+}
 a,
 abbr,
 address,
@@ -97,7 +101,6 @@ video {
   outline: 0;
   padding: 0;
 }
-
 *,
 *::before,
 *::after {
@@ -105,7 +108,6 @@ video {
   margin: 0;
   padding: 0;
 }
-
 h1,
 h2,
 h3,
@@ -121,23 +123,24 @@ span,
 small {
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
 }
-
 a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 1);
   text-decoration: none;
-  color: var(--color-white);
+  color: white;
 }
-
 input:not([type='checkbox']):not([type='radio']),
 button {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   outline: none;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 1);
   -webkit-touch-callout: none;
 }
-
 h1 small,
 h2 small,
 h3 small,
@@ -146,54 +149,77 @@ h5 small,
 h6 small {
   font-size: 5.6rem;
   font-weight: 400;
-  letter-spacing: calc(-1 * 0.02em);
+  letter-spacing: -0.02em;
   line-height: 1.35;
   opacity: 0.54;
 }
-
 h1 {
   font-size: 5.6rem;
   font-weight: 400;
-  letter-spacing: calc(-1 * 0.02em);
+  letter-spacing: -0.02em;
   line-height: 1.35;
 }
-
 h2 {
   font-size: 4.5rem;
   font-weight: 400;
   line-height: 4.8rem;
 }
-
 h3 {
   font-size: 3.4rem;
   font-weight: 400;
   line-height: 4rem;
 }
-
 h4 {
   font-size: 2.4rem;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
   line-height: 3.2rem;
 }
-
 h5 {
   font-size: 2rem;
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1;
 }
-
 h6 {
   font-size: 1.6rem;
   font-weight: 400;
   letter-spacing: 0.04em;
   line-height: 2.4rem;
 }
-
 p {
   font-size: 1.6rem;
   font-weight: 400;
   letter-spacing: 0;
   line-height: 2.4rem;
+}
+section {
+  max-width: 100%;
+  height: 80%;
+  background-color: #d96d64;
+  color: white;
+  text-align: center;
+  padding-top: 15%
+}
+section > h1 {
+  margin-bottom: 40px;
+}
+section > h4 > a {
+  font-weight: 900;
+  color: #333;
+}
+footer {
+  max-width: 100%;
+  height: 20%;
+  background-color: #333;
+  text-align: center;
+  padding: 25px
+}
+footer > ul {
+  margin: 0 auto;
+  margin: 20px 0;
+}
+footer > ul > li {
+  display: inline-block;
+  margin: 10px;
 }
